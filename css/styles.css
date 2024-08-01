@@ -61,11 +61,12 @@
     padding: 0 10px;
   }
   .intro-text div > p {
-    width: 100%;
     margin: 5;
     white-space: normal;
     text-align: center;
+    
   }
+  
   
   .intro-text > i {
     font-size: 300px;
