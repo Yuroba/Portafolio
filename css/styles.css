@@ -8,34 +8,6 @@
     box-sizing: border-box
   }
   
-  body {
-    margin: auto 10vw;
-    padding: 0;
-    background: radial-gradient(circle at 50% 10%,#4C008A 17%,#1A0136 56%, #1A0156 93%);
-  }
-  
-  #welcome-section {
-    width: 100%;
-    margin: 0px auto;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    display: flex;
-    
-  }
-  
-  .intro-text {
-    width: 50%;
-    margin-top: 50px;
-  }
-  #welcome-section > h1 {
-    margin: 20px 0;
-    width: 80%;
-  }
-  .intro-text p {
-    width: 80%;
-    margin: 5;
-  }
-  
   h1 {
     color: white;
     font-size: 3rem;
@@ -57,22 +29,58 @@
   i {
     color: var(--color-icon);
   }
-  
-  #welcome-section > i {
-    position:relative;
-    font-size: 200px;
-    top: 100px;
-    left: 10%;
-    height: 0px;
+
+  body {
+    margin: auto 0;
+    padding: 0;
+    background: radial-gradient(circle at 50% 10%,#4C008A 17%,#1A0136 56%, #1A0156 93%);
   }
   
-  .intro-text form{
+  #welcome-section {
+    
+    margin: 0px 100px;
+    margin-top: 150px;
+    margin-bottom: 250px;
+    display: flex;
+    
+  }
+  
+  .intro-text {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #welcome-section h1 {
+    margin: 20px 50px;
+    width: 80%;
+    text-align: center;
+  }
+  .intro-text > div {
+    width: 50%;
+    padding: 0 10px;
+  }
+  .intro-text div > p {
+    width: 100%;
+    margin: 5;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  .intro-text > i {
+    font-size: 300px;
+    display: flex;
+    width: 40%;
+  }
+  
+  .intro-text div form{
     color: white;
     font-family: Georama, sans-serif;
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
+    width: 50%;
+    min-width: 280px;
+    margin: auto;
     margin-top: 100px;
+    
   }
   
   
@@ -89,7 +97,7 @@
   
   .form-icons {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     column-gap: 10px;
   }
   .form-icons input {
@@ -101,7 +109,7 @@
   
   .form-icons a{
     display: block;
-    width: 40px;
+    
     text-align: center;
     height: 47px;
   }
@@ -144,9 +152,8 @@
   #projects {
     border: 1px solid white;
     background-color: #5C46FF;
-    padding: 20px 20px;
+    padding: 10px 20px 50px;
     
-    margin: 0 auto;
   }
   #projects h1 {
     margin: 0;
@@ -170,19 +177,18 @@
   
   .project-tile {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 5px;
-    
+    justify-content: center;
+    column-gap: 50px;
+    overflow: auto;
+    margin-top: 50px;
   }
   .project-tile .proj {
     background-color: white;
+    min-width: 300px;
     width: 300px;
     border-radius: 10px;
     display: block;
     padding: 0 5px;
-    margin-top: 10px;
-    margin: 15px auto;
-    
   }
   .proj p {
     color:black;
@@ -233,19 +239,24 @@
 
   #container-skills {
     color: white;
-    margin-top: 30px;
+    padding: 0 100px;
+    text-align: center;
+    width: 80%;
+    margin: 100px auto;
+    
   }
   #container-skills div:first-child{
     display: flex;
     align-items: center;
     column-gap: 5px;
-    
+    justify-content: center;
   }
 
   .skill > div{
-    
+    justify-content: space-evenly;
     display: flex;
     column-gap: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
   }
   .front, .language, .sql, .gen {
     display: flex;

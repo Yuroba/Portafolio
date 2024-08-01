@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,33 +15,36 @@
   <body>
     <section id="welcome-section">
       <div class="intro-text">
-        <h1>Yuroba &lt;/&gt;</h1>
-        <p>Un gusto saludar querido visitante. 
+        <div>
+          <h1>Yuroba &lt;/&gt;</h1>
+          <p>
+            Un gusto saludar querido visitante. 
+            Soy un desarollador Front-End y un joven apasionado por diseños y desarrollo web. 
+            Aqui veras varios de mis proyectos y Habilidades
+          </p>
           
-          Soy un desarollador Front-End y un joven apasionado por diseños y desarrollo web.</p>
-        
-        <form action="" method="POST">
-          <section>
-            <i class="fa-regular fa-envelope"></i>
-            <label >EMAIL</label>
-          </section>
-          
-          <section class="form-icons">
-            <input type="text" value="Texto fijo" id="inputEmail" readonly>
+          <form action="" method="POST">
+            <section>
+              <i class="fa-regular fa-envelope"></i>
+              <label >EMAIL</label>
+            </section>
+            
+            <section class="form-icons">
+              <input type="text" value="Texto fijo" id="inputEmail" readonly>
 
-            <a href="#"onclick="copyText()">
-              <i class="fa-regular fa-copy"></i>
-              <p>Copy</p>
-            </a>
-            <a href="#" onclick="copyText()">
-              <i class="fa-regular fa-paper-plane"></i>
-              <p>Send</p>
-            </a>
-          </section>
-        </form>
+              <a href="#">
+                <i class="fa-regular fa-copy"></i>
+                <p>Copiar</p>
+              </a>
+              <a href="#">
+                <i class="fa-regular fa-paper-plane"></i>
+                <p>Enviar</p>
+              </a>
+            </section>
+          </form>
+        </div>
+        <i class="fa-solid fa-robot"></i>
       </div>
-      <i class="fa-solid fa-robot"></i>
-      
     </section>
     
     <nav id="navbar">
@@ -51,15 +54,15 @@
 
       <section class="navsec nav-sects">
       <a href="#welcome-section">Inicio</a>
-      <a href="#projects">Projects</a>
-      <a href="#contacts">Skilleras</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#container-skills">Habilidades</a>
       </section>
     </nav>
 
     <section id="projects">
       <div class="project-content-title">
         <i class="fa-solid fa-diagram-project"></i>
-        <h1>Proyectos</h1>
+        <h1>Proyectos realizados</h1>
       </div>
       <div class="project-tile">
         <section class="proj project1">
@@ -86,7 +89,30 @@
           </a>
         
         </section>
+        <section class="proj project2">
+          <h2>Aplicativo con BD para inscripción de alumnos</h2>
+          <div id="contain-img-proj">
+            <img src="https://avatars.githubusercontent.com/u/173974688?s=400&v=4">
+          </div>
+          <h3>Descripcion</h3>
+          <p>Crear con python y oracledb un sistema de inscripción</p>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>Take a look
+          </a>
         
+        </section>
+        <section class="proj project2">
+          <h2>Aplicativo con BD para inscripción de alumnos</h2>
+          <div id="contain-img-proj">
+            <img src="https://avatars.githubusercontent.com/u/173974688?s=400&v=4">
+          </div>
+          <h3>Descripcion</h3>
+          <p>Crear con python y oracledb un sistema de inscripción</p>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>Take a look
+          </a>
+        
+        </section>
       </div>
       
     </section>
@@ -96,8 +122,9 @@
             <i class="fa-solid fa-star-of-life"></i>
             <h2>Habilidades</h2>
         </div>
-        <p>I've been self-learning different programming languages and frameworks. 
-            Some tools I saw in high school, and others I learned due to my interest in these technologies.
+        <p>He estado aprendiendo diferentes lenguages de programación y frameworks. 
+          De igual forma tuve que aprender herramientas de diseño como webFlow y Figma 
+          para agilizar el trabajo.
         </p>
         <div class="frontEnd skill">
             <h3>FrontEnd</h3>
@@ -157,21 +184,7 @@
         </div>
     </section>
     <script src="https://kit.fontawesome.com/095babad34.js" crossorigin="anonymous"></script>
-    <script>
-        function copyText() {
-            var copyText = document.getElementById("myInput");
-
-            // Seleccionar el texto dentro del campo de entrada
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // Para dispositivos móviles
-
-            // Copiar el texto seleccionado al portapapeles
-            document.execCommand("copy");
-
-            // Deseleccionar el texto
-            copyText.blur();
-        }
-    </script>
+    <script></script>
     
   </body>
 </html>
