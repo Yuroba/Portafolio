@@ -1,0 +1,276 @@
+:root {
+    --color-p: #FFC2F9;
+    --color-icon: #E5FC31;
+    --color-nav: #E6B5EA;
+  }
+  
+  * {
+    box-sizing: border-box
+  }
+  
+  body {
+    margin: auto 10vw;
+    padding: 0;
+    background: radial-gradient(circle at 50% 10%,#4C008A 17%,#1A0136 56%, #1A0156 93%);
+  }
+  
+  #welcome-section {
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    
+  }
+  
+  .intro-text {
+    width: 50%;
+    margin-top: 50px;
+  }
+  #welcome-section > h1 {
+    margin: 20px 0;
+    width: 80%;
+  }
+  .intro-text p {
+    width: 80%;
+    margin: 5;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: Georama;
+  }
+  
+  h2 {
+    font-family: IBM plex mono;
+    font-size: 20px;
+  }
+  
+  p {
+    white-space: pre-line;
+    font-size: 13px;
+    font-family: IBM plex mono;
+    color: var(--color-p);
+  }
+  
+  i {
+    color: var(--color-icon);
+  }
+  
+  #welcome-section > i {
+    position:relative;
+    font-size: 200px;
+    top: 100px;
+    left: 10%;
+    height: 0px;
+  }
+  
+  .intro-text form{
+    color: white;
+    font-family: Georama, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 100px;
+  }
+  
+  
+  form input {
+    border-radius: 6px;
+    height: 8%;
+    color: white;
+    text-align: center;
+  }
+  
+  form section > label {
+    font-weight: bold;
+  }
+  
+  .form-icons {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .form-icons input {
+    background-color: #34A126;
+    border: 2px solid #1DF700;
+    height: 36px;
+    box-shadow: 0px 0px 5px #1DF700;
+  }
+  
+  .form-icons a{
+    display: block;
+    width: 40px;
+    text-align: center;
+    height: 47px;
+  }
+  .form-icons a p {
+    font-size: 10px;
+  }
+  
+  
+  #navbar {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #101010;
+    width: 80%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  
+  .navsec a,.navsec i{
+    text-decoration: none;
+    color: var(--color-nav);
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .nav-profile a{
+    text-shadow: 0px 0px 15px #E400C6, 0px 0px 15px #E400C6, 0px 0px 15px #E400C6;
+    font-size: 20px;
+  }
+  
+  i {
+    font-size: 26px;
+  }
+  
+  
+  #projects {
+    border: 1px solid white;
+    background-color: #5C46FF;
+    padding: 20px 20px;
+    
+    margin: 0 auto;
+  }
+  #projects h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 3rem;
+  }
+  #projects h2 {
+    margin: 0;
+    font-size: 16px;
+  }
+  #projects h3 {
+    margin: 0;
+  }
+  
+  .project-content-title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    
+  }
+  
+  .project-tile {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    
+  }
+  .project-tile .proj {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    display: block;
+    padding: 0 5px;
+    margin-top: 10px;
+    margin: 15px auto;
+    
+  }
+  .proj p {
+    color:black;
+    font-family: Jura;
+    font-weight: bold;
+  }
+  
+  .proj img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  
+  .proj a {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 16px;
+    align-items: center;
+    column-gap: 5px;
+    padding: 5px;
+  }
+  .proj a i {
+    color: white;
+  }
+  @media (max-width: 500px) {
+    #welcome-section > i {
+      border: 0;
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      white-space: nowrap;
+      position: absolute;
+      padding: 0;
+      margin: -1px;
+    }
+    nav,#projects {
+      overflow: hidden;
+    }
+  }
+
+  /*Hability thenical*/
+
+  #container-skills {
+    color: white;
+    margin-top: 30px;
+  }
+  #container-skills div:first-child{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    
+  }
+
+  .skill > div{
+    
+    display: flex;
+    column-gap: 10px;
+  }
+  .front, .language, .sql, .gen {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+div[class="front tool1"] i {
+    color: orange;
+    
+  }
+div[class="front tool2"] i {
+    color: rgb(77, 77, 247);
+}
+div[class="front tool3"] i {
+    color: greenyellow;
+}
+div[class="front tool4"] i {
+    color: lightblue;
+}
+div[class="language tool2"] i {
+    color: orange;
+}
+div[class="gen tool1"] i {
+    color: orangered;
+}
+div[class="gen tool2"] i {
+    color: white;
+}

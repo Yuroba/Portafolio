@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section id="welcome-section">
+      <div class="intro-text">
+        <h1>Yuroba &lt;/&gt;</h1>
+        <p>Un gusto saludar querido visitante. 
+          
+          Soy un desarollador Front-End y un joven apasionado por diseños y desarrollo web.</p>
+        
+        <form action="" method="POST">
+          <section>
+            <i class="fa-regular fa-envelope"></i>
+            <label >EMAIL</label>
+          </section>
+          
+          <section class="form-icons">
+            <input type="text" value="Texto fijo" id="inputEmail" readonly>
+
+            <a href="#"onclick="copyText()">
+              <i class="fa-regular fa-copy"></i>
+              <p>Copy</p>
+            </a>
+            <a href="#" onclick="copyText()">
+              <i class="fa-regular fa-paper-plane"></i>
+              <p>Send</p>
+            </a>
+          </section>
+        </form>
+      </div>
+      <i class="fa-solid fa-robot"></i>
+      
+    </section>
+    
+    <nav id="navbar">
+      <section class="navsec nav-profile">
+        <a id="profile-link" href="https://github.com/Yuroba" target="_blank"><i class="fa-brands fa-github"></i>Profile Github</a>
+      </section>
+
+      <section class="navsec nav-sects">
+      <a href="#welcome-section">Inicio</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Habilidades</a>
+      </section>
+    </nav>
+
+    <section id="projects">
+      <div class="project-content-title">
+        <i class="fa-solid fa-diagram-project"></i>
+        <h1>Proyectos</h1>
+      </div>
+      <div class="project-tile">
+        <section class="proj project1">
+          <h2>Pagina para descargar videos con Flask</h2>
+          
+          <img src="https://avatars.githubusercontent.com/u/173974688?s=400&v=4">
+        
+          <h3>Descripcion</h3>
+          <p>Crear una pagina con flask que descargue videos con pytube</p>
+          
+          <a href="https://github.com/Yuroba/PrimerRepo">
+            <i class="fa-brands fa-github"></i>Take a look
+          </a>
+        </section>
+        <section class="proj project2">
+          <h2>Aplicativo con BD para inscripción de alumnos</h2>
+          <div id="contain-img-proj">
+            <img src="https://avatars.githubusercontent.com/u/173974688?s=400&v=4">
+          </div>
+          <h3>Descripcion</h3>
+          <p>Crear con python y oracledb un sistema de inscripción</p>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>Take a look
+          </a>
+        
+        </section>
+        
+      </div>
+      
+    </section>
+    
+    <section id="container-skills">
+        <div>
+            <i class="fa-solid fa-star-of-life"></i>
+            <h2>Habilidades</h2>
+        </div>
+        <p>I've been self-learning different programming languages and frameworks. 
+            Some tools I saw in high school, and others I learned due to my interest in these technologies.
+        </p>
+        <div class="frontEnd skill">
+            <h3>FrontEnd</h3>
+            <div>
+                <div class="front tool1">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="front tool2">
+                    <i class="fa-brands fa-css3"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="front tool3">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="front tool4">
+                    <i class="fa-solid fa-clipboard-question"></i>
+                    <p>JQuery</p>
+                </div>
+            </div>
+        </div>
+        <div class="languages skill">
+            <h3>Programming language</h3>
+            <div>
+                <div class="language tool1">
+                    <i class="fa-brands fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="language tool2">
+                    <i class="fa-brands fa-python"></i>
+                    <p>python</p>
+                </div>
+            </div>
+        </div>
+        <div class="sqls skill">
+            <h3>Base de datos</h3>
+            <div>
+                <div class="sql tool1">
+                    <i class="fa-solid fa-database"></i>
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+        <div class="toolGenerals skill">
+            <h3>Control de Versiones</h3>
+            <div>
+                <div class="gen tool1">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+                <div class="gen tool2">
+                    <i class="fa-brands fa-github"></i>
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/095babad34.js" crossorigin="anonymous"></script>
+    <script>
+        function copyText() {
+            var copyText = document.getElementById("myInput");
+
+            // Seleccionar el texto dentro del campo de entrada
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // Para dispositivos móviles
+
+            // Copiar el texto seleccionado al portapapeles
+            document.execCommand("copy");
+
+            // Deseleccionar el texto
+            copyText.blur();
+        }
+    </script>
+    
+  </body>
+</html>
